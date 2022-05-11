@@ -51,6 +51,7 @@ WordShow.innerHTML = replaced;
 }
 restart.addEventListener('click',()=>{
 SelectorContainer.classList.remove('choosed');
+char = '';
 Warning.classList.remove('choosed');
 Game.classList.add('unactive');
 LifesParent.innerHTML = 'Tentativas restantes: <span class="acount">5</span>';
