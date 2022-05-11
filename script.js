@@ -31,8 +31,11 @@ if(actualword.includes(e.target.innerHTML))
 char+=e.target.innerHTML;
 else{
 Lifes.innerHTML = Number(Lifes.innerHTML-1)
-if(Lifes.innerHTML=='0'){
- Lifes.parentNode.innerHTML = `Você perdeu! A palavra era: ${actualword}`;
+if (Lifes.innerHTML==0){
+  Lifes.parentNode.innerHTML = `Você perdeu! A palavra era: ${actualword}`;
+  replaced = actualword
+  WordShow.innerHTML = replaced;
+  return;
 }
 }
 replaced = palavra;
