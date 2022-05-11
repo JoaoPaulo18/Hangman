@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS.css">
+  <title>Hangman</title>
+</head>
+
+<body>
+  <main class="ForcaMain">
+    <div class="WordChooser">
+      <h2 class="ChooserTitle">Escolha sua palavra!</h2>
+      <input type="text" placeholder="Coloque a palavra que será adivinhada aqui!" id="ChooseWord">
+      <button id="ForcaBTN">Selecionar!</button>
+    </div>
+
+      <div class="charSelector unactive">
+        <h2 class="Lifes">Tentativas restantes: <span>5</span></h2>
+        <div class="characters">
+<button>A</button>
+<button>B</button>
+<button>C</button>
+<button>D</button>
+<button>E</button>
+<button>D</button>
+<button>E</button>
+<button>F</button>
+<button>G</button>
+<button>H</button>
+<button>I</button>
+<button>J</button>
+<button>K</button>
+<button>L</button>
+<button>M</button>
+<button>N</button>
+<button>O</button>
+<button>P</button>
+<button>Q</button>
+<button>R</button>
+<button>S</button>
+<button>T</button>
+<button>U</button>
+<button>V</button>
+<button>X</button>
+<button>W</button>
+<button>Y</button>
+<button>Z</button>
+        </div>
+        <span id="WordChoosed"></span>
+        <button class="ForcaRestart">Reiniciar</button>
+      </div>
+
+      
+      <div class="WarningContainer">
+        <h3 class="warning">Atenção!</h3>
+        <span class="warningText">Não utilize letras que tenham acentos, simbolos ou números!</span>
+      </div>
+
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
