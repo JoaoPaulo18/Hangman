@@ -6,7 +6,8 @@ const WordShow = document.querySelector('#WordChoosed');
 const chars = document.querySelectorAll('.characters button');
 const restart = document.querySelector(".ForcaRestart");
 const Warning = document.querySelector('.WarningContainer');
-const Lifes = document.querySelector('.Lifes span');
+let Lifes = document.querySelector('.acount');
+const LifesParent = document.querySelector('.Lifes');
 
 let actualword='';
 let char = '';
@@ -36,7 +37,7 @@ if (Lifes.innerHTML==0){
   replaced = actualword
   WordShow.innerHTML = replaced;
   return;
-}
+  }
 }
 replaced = palavra;
 replaced = replaced.split('');
@@ -52,5 +53,7 @@ restart.addEventListener('click',()=>{
 SelectorContainer.classList.remove('choosed');
 Warning.classList.remove('choosed');
 Game.classList.add('unactive');
+LifesParent.innerHTML = 'Tentativas restantes: <span class="acount">5</span>';
+Lifes = document.querySelector('.acount');
 chars.forEach(char => char.classList.remove('clicked'))
 })
